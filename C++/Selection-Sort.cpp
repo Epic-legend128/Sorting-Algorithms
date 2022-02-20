@@ -28,7 +28,7 @@ int main() {
         nums.push_back(current);
     }
     
-    selection(nums);
+    selection(nums, size);
     
     for (int i = 0; i<size; i++) {
         cout << nums[i]<<" ";
