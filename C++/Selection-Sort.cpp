@@ -1,3 +1,7 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
 //selection sort O(n^2) time notation
 void selection(vector<int>& list, int limit) {
     int mx = 0;
@@ -12,3 +16,4 @@ void selection(vector<int>& list, int limit) {
         swap(list[i], list[mn]);
     }
 }
+
