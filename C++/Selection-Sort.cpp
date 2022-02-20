@@ -17,3 +17,21 @@ void selection(vector<int>& list, int limit) {
     }
 }
 
+int main() {
+    int size = 5;
+    vector<int> nums(size, 0);
+    cout << "Enter "<<size<<" numbers:\n";
+    
+    for (int i = 0; i < size; i++) {
+        int current;
+        cin >> current;
+        nums.push_back(current);
+    }
+    
+    selection(nums);
+    
+    for (int i = 0; i<size; i++) {
+        cout << nums[i]<<" ";
+    }
+    cout << "\n";
+}
