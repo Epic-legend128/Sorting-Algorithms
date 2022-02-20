@@ -24,7 +24,7 @@ int main() {
         nums.push_back(current);
     }
     
-    insertion(nums);
+    insertion(nums, size);
     
     for (int i = 0; i<size; i++) {
         cout << nums[i]<<" ";
