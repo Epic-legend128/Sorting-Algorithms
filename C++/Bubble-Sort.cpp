@@ -1,3 +1,7 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
 //bubble sort O(n^2) time notation
 void bubble(vector<int>& list, int limit) {
     for (int i = limit; i>0; i--) {
