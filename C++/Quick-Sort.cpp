@@ -22,3 +22,23 @@ void quicksort(vector<int>& list, int p, int r) {
         
     }
 }
+
+
+int main() {
+    int size = 5;
+    vector<int> nums(size, 0);
+    cout << "Enter "<<size<<" numbers:\n";
+    
+    for (int i = 0; i < size; i++) {
+        int current;
+        cin >> current;
+        nums.push_back(current);
+    }
+    
+    quicksort(nums, 0, size-1);
+    
+    for (int i = 0; i<size; i++) {
+        cout << nums[i]<<" ";
+    }
+    cout << "\n";
+}
