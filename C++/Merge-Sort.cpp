@@ -21,9 +21,6 @@ void merge(vector<int>& list, int p, int q, int r) {
     k = p;
     i = 0;
     j = 0;
-    int lowSize = q-p+1;
-    int highSize = r-q;
-    //cout << lowHalf.size()<< " "<< highHalf.size()<<" the size "<< lowSize<<" "<<highSize<<endl;
     
     while (i < lowHalf.size() && j < highHalf.size()) {
         if (lowHalf[i] < highHalf[j]) {
