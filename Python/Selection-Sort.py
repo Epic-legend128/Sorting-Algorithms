@@ -3,9 +3,7 @@ def selection(array, limit):
     mn = i
     for j in range(mn+1, limit):
       if array[j] < array[mn]: mn = j
-    temp = array[i]
-    array[i] = array[mn]
-    array[mn] = temp
+    array[i], array[mn] = array[mn], array[j]
 
 #an example
 myArray = [0, 2, 1, -100, 0.2, -3.9, 2398, 382]
