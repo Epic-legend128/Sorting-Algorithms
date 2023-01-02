@@ -3,7 +3,7 @@ def insertion(array, limit):
     value = array[i]
     for j in range(i-1, -1, -1):
       if (array[j] < value): break
-        array[j], array[j+1] = array[j+1], array[j]
+      array[j], array[j+1] = array[j+1], array[j]
 
 
 #an example
