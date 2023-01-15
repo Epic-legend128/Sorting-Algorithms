@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+using namespace std;
 
 //a function used in quicksort
 int partition(vector<int>& list, int p, int r) {
@@ -19,14 +20,14 @@ void quicksort(vector<int>& list, int p, int r) {
         int q = partition(list, p, r);
         quicksort(list, p, q-1);
         quicksort(list, q+1, r);
-        
     }
 }
 
 
 int main() {
     int size = 5;
-    vector<int> nums(size, 0);
+    vector<int> nums;
+    nums.reserve(size);
     cout << "Enter "<<size<<" numbers:\n";
     
     for (int i = 0; i < size; i++) {
