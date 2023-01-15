@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
 using namespace std;
 
 
@@ -53,7 +54,8 @@ void mergesort(vector<int>& list, int p, int r) {
 
 int main() {
     int size = 5;
-    vector<int> nums(size, 0);
+    vector<int> nums;
+    nums.reserve(size);
     cout << "Enter "<<size<<" numbers:\n";
     
     for (int i = 0; i < size; i++) {
